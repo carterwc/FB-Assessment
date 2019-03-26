@@ -37,14 +37,14 @@ class App extends Component {
                 if (data.artistID) {
                     this.props.selectedArtistUpdated(data);
                 } else {
-                    // set selected artist as error object when object comes bacj
+                    // set selected artist as error object when object comes bacjk with no artistID
                     this.props.selectedArtistUpdated({
                         error: 'Error Loading Artist',
                     });
                 }
             })
             .catch(error => {
-                // display the 401 error message for the failed load
+                // display the error message for the failed load
                 this.props.selectedArtistUpdated({ error: error.message });
             });
     };
