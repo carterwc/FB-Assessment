@@ -1,0 +1,88 @@
+#root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.artist-app {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: 900px;
+}
+
+.artist-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 40px;
+}
+
+.summary-view {
+    display: flex;
+    flex: 2;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.full-name {
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    font-size: 12px;
+}
+
+.artist-list > .artist-info {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background: #eee;
+    margin-bottom: 10px;
+    color: #888;
+}
+
+.artist-list > .artist-info.--selected {
+    background: #fff;
+}
+
+.artist-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #888;
+}
+
+.selected-artist-image {
+    height: 120px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.select-artist-text {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.selected-artist-full-name {
+    font-size: 20px;
+}
+
+.error-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
